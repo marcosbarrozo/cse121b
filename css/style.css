@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    background-color: rgba(255,255,255,.5);
+    box-shadow: 0 .3rem .8rem rgba(0,0,0,.2);
+    padding: 1rem;
+    min-width: 500px;
+}
+h1{
+    text-align: center;
+    color:rgba(21, 68, 139, 1);
+    margin-bottom: 1rem;
+}
+#background-text{
+    text-align: center;
+    margin: .5rem;
+    color: color:rgba(21, 68, 139, 1);
+    font-weight: bold;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.background-btn{
+    padding: .5rem .8rem;
+    border-radius: .7rem;
+    border: none;
+    background-color: rgba(21, 68, 139, 0.808);
+    color: white;
+    cursor: pointer;
+    font-size: .95rem;
+}
+.background-btn:hover{
+    background-color: rgba(21, 68, 139, 1);
+}
+.random-container{
+    display: none;
+    padding: 1rem 0;
+}
+
+.solid-btn{
+    padding: .5rem .8rem;
+    border-radius: .7rem;
+    border: none;
+    background-color: rgba(21, 139, 66, 0.808);
+    color: white;
+    cursor: pointer;
+    font-size: .95rem;
+}
+.solid-btn:hover{
+    background-color: rgba(21, 139, 66, 1);
+}
+
+.linear-btn{
+    padding: .5rem .8rem;
+    border-radius: .7rem;
+    border: none;
+    background: linear-gradient(90deg,rgba(18, 100, 50, 0.808),rgba(21, 68, 139, .5));
+    color: white;
+    cursor: pointer;
+    font-size: .95rem;
+}
+
+.linear-btn:hover{
+    background: linear-gradient(90deg,rgba(18, 100, 50, 0.808),rgba(21, 68, 139, 1));
+}
+.choice-container{
+    display: none;
+    padding: 1rem 0;
+}
+#choice-content{
+    padding: 1rem 0;
+}
+#choice-content input{
+    margin: 0 .5rem;
+}
+#choice-content label{
+    font-weight: bold;
+    color:rgba(21, 68, 139, 1);
+}
+.change-btn{
+    display: block;
+    margin: 1rem auto 0rem auto;
+    padding: .5rem .8rem;
+    border-radius: .7rem;
+    border: none;
+    background-color: rgba(10, 48, 209, 0.808);
+    color: white;
+    cursor: pointer;
+    font-size: .95rem;
+}
+
+#change-btn:hover{
+    background-color: rgba(10, 48, 209, 1);
+}
+
+.choice-solid{
+    display: none;
+}
+.choice-linear{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

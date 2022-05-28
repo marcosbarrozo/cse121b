@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color CSS</title>
+    <meta name="description" content="Create a random background or a color of your choice.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <h1>Background Color CSS</h1>
+        <div class="btn-container">
+            <button class="background-btn" id="random-background">Random Background</button>
+            <button class="background-btn" id="choice-background">Choice a Color</button>
+        </div>
+        
+        <div class="random-container">
+            <div class="btn-container">
+                <button class="solid-btn" id="random-solid">Solid Color</button>
+                <button class="linear-btn" id="random-linear">Linear Gradient</button>
+            </div>
+
+        </div>
+        <div class="choice-container">
+            <div class="btn-container">
+                <button class="solid-btn" id="user-solid">Solid Color</button>
+                <button class="linear-btn" id="user-linear">Linear Gradient</button>
+            </div>
+            <div id="choice-content">
+                <div class="choice-solid">
+                    <label for="user-color">Color: </label>
+                    <input type="color" name="user-color" id="user-color">
+                    <button id="change-solid-btn" class="change-btn"> Change Background!</button>
+                </div>
+                <div class="choice-linear">
+                    <label for="first-color">First Color: </label>
+                    <input type="color" name="first-color" id="first-color">
+                
+                <label for="first-color">Second Color: </label>
+                <input type="color" name="second-color" id="second-color">
+                <label for="degree">Degree: </label>
+                <input type="range" min="0" max="360" value="0" id="degree">
+                <button id="change-linear-btn" class="change-btn"> Change Background!</button>
+            </div>
+                
+                
+            </div>
+        </div>
+        <p id="background-text"></p>
+    </main>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
